@@ -1,0 +1,25 @@
+# Ignore configuration files
+/etc/mail.template
+/etc/ash.template
+/etc/settings.conf
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp/*/*
+
+# Ignore the message archive
+/archive/*/*.eml
+
+# Ignore custom modules
+/lib/custom/find_customer.php
+/lib/custom/notifier.php
+
+# Ignore htdocs protection
+/public/.htaccess
+/public/ash/.htaccess
+/public/rpc/.htaccess
+
+# Ignore custom templates
+/www/ash/infotext/*.html
+!/www/ash/infotext/template.html
+

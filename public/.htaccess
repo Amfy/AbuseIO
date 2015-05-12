@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+order deny,allow
+deny from all
+# Bart
+allow from 213.154.229.112/28
+allow from 178.84.1.237
+allow from 2001:7b8:61d::/48
+# BIT
+allow from 213.136.12.128/26
+allow from 213.136.0.33
+allow from 2001:7b8:3:30::/64
+allow from 2001:7b8:3:1000::/63
+# Dennis
+#allow from 80.101.224.146
+# Stefan
+allow from 82.161.251.247
+allow from 2001:981:4797::/48
+
