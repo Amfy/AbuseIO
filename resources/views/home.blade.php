@@ -2,16 +2,17 @@
 
 @section('content')
 <div class="container">
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<div class="panel panel-default">
-				<div class="panel-heading">Home</div>
-
-				<div class="panel-body">
-					You are logged in!
-				</div>
-			</div>
-		</div>
-	</div>
+    <h1 class="page-header">Home</h1>
+    <p>
+        AbuseIO is a toolkit to receive, process, correlate and notify
+        about abuse reports received by network operators, typically hosting
+        and access providers.
+    </p>
+    <p>
+        It is a community-driven project and open source software.
+        Its purpose is to consolidate efforts by various companies
+        and individuals to automate and improve the abuse handling
+        process.
+    </p>
 </div>
 @endsection

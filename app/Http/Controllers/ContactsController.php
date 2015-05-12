@@ -1,10 +1,10 @@
 <?php namespace App\Http\Controllers;
 
-class HomeController extends Controller {
+class ContactsController extends Controller {
 
 	public function index()
 	{
-		return view('home');
+		return view('contacts');
 	}
 
 }
