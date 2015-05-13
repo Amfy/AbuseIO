@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AbuseIO 4.0</title>
+	<title>{{ Config::get('app.name') }} {{ Config::get('app.version') }} - {{ $nav_items[Request::path()] }}</title>
 
 	<link href="{{ asset('/css/bootstrap.min.css')          }}" rel="stylesheet">
     <link href="{{ asset('/css/bootstrap-theme.min.css')    }}" rel="stylesheet">
@@ -31,15 +31,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <?php
-                        $nav_items = array('Home','Contacts','Netblocks','Domains','Reports','Search','Analytics');
-                        foreach($nav_items as $nav_item) {
-                            $nav_link = strtolower($nav_item);
-                        ?>
-                            <li class="{{ Request::path() == $nav_link ? 'active' : '' }}"><a href="{{ url('/'.$nav_link) }}">{{ $nav_item }}</a></li>
-                        <?php
-                        }
-                    ?>
+                        @foreach($nav_items as $nav_link => $nav_title) {
+                            <li class="{{ Request::path() == $nav_link ? 'active' : '' }}"><a href="{{ url('/'.$nav_link) }}">{{ $nav_title }}</a></li>
+                        @endforeach
                 </ul>
             </div>
         </div>

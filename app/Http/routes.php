@@ -1,9 +1,10 @@
 <?php
-Route::get('/',         'HomeController@index');
-Route::get('home',      'HomeController@index');
-Route::get('contacts',  'ContactsController@index');
-Route::get('netblocks', 'NetblocksController@index');
-Route::get('domains',   'DomainsController@index');
-Route::get('reports',   'ReportsController@index');
-Route::get('search',    'SearchController@index');
-Route::get('analytics', 'AnalyticsController@index');
+
+Route::get('/',         'PageController@home');
+Route::get('home',      'PageController@home');
+Route::get('contacts',  'PageController@contacts');
+Route::get('netblocks', 'PageController@netblocks');
+Route::get('domains',   'PageController@domains');
+Route::get('reports',   'PageController@reports');
+Route::get('search',    'PageController@search');
+Route::get('analytics', 'PageController@analytics');

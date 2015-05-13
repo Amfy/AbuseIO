@@ -13,5 +13,5 @@ return array(
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
-    'App\\' => array($baseDir . '/app'),
+    'AbuseIO\\' => array($baseDir . '/app'),
 );
