@@ -1,6 +1,9 @@
 <?php
 
-Route::get('/',         'PageController@home');
+Route::get('/',         function() {
+    return Redirect::to('home');
+});
+
 Route::get('home',      'PageController@home');
 Route::get('contacts',  'PageController@contacts');
 Route::get('netblocks', 'PageController@netblocks');
